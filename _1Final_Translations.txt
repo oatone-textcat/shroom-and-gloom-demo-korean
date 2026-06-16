@@ -6,6 +6,26 @@ sr:^(?<n>\d+) Uses$=남은 횟수: ${n}
 sr:^Evolve (?<n>\d+)$=진화 ${n}
 sr:^Battery (?<cur>\d+)/(?<max>\d+)$=배터리 ${cur}/${max}
 
+IF FATAL,=처치 시,
+
+sr:^(?<pre>[\s\S]*?)New(?<post>.*?)$=${pre}신규${post}
+
+sr:^(?<pre>[\s\S]*?)STORED GUNK(?<post>.*?)$=${pre}저장된 오물${post}
+sr:^(?<pre>[\s\S]*?)Consult an expert\.\\r\\nHarness the power\\r\\nof (?<r372_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\\r\\n(?<post>.*?)$=${pre}전문가와 상담합니다.\r\n${r372_g1}의 힘을\r\n활용합니다\r\n${post}
+sr:^(?<pre>[\s\S]*?)Feed a specimen to gain data<\#1C1F4BFF><nobr>(?<post>.*?)$=${pre}표본에게 먹이를 줘 데이터를 얻습니다<#1C1F4BFF><nobr>${post}
+sr:^(?<pre>[\s\S]*?)Toad Experiment WIP text(?<post>.*?)$=${pre}두꺼비 실험 WIP 텍스트${post}
+sr:^(?<pre>[\s\S]*?)Unlock strategic protocols(?<post>.*?)$=${pre}전략 프로토콜을 개방합니다${post}
+sr:^(?<pre>[\s\S]*?)ERECT <\#2D7621FF><nobr><link=kW>Toad</link></nobr></color> SHRINE\.\nFEED THE TOAD, FORGET A COMBAT CARD\. <\#332F2FFF><nobr><link=kW>Structure</link></nobr></color>(?<post>.*?)$=${pre}<#2D7621FF><nobr><link=kW>두꺼비</link></nobr></color> 신전을 세웁니다.\n두꺼비에게 먹이를 주고, 전투 카드를 망각합니다. <#332F2FFF><nobr><link=kW>구조물</link></nobr></color>${post}
+sr:^(?<pre>[\s\S]*?)THE CARD <\#2D7621FF><nobr><link=kW>Toad</link></nobr></color> SITS UPON THEIR THRONE<\#332F2FFF>\. <nobr><link=kW>Structure</link></nobr></color>(?<post>.*?)$=${pre}카드 <#2D7621FF><nobr><link=kW>두꺼비</link></nobr></color>가 왕좌에 앉아 있습니다<#332F2FFF>. <nobr><link=kW>구조물</link></nobr></color>${post}
+sr:^(?<pre>[\s\S]*?)REMINISCE WITH THE VAGABOND <\#2D7621FF><nobr><link=kW>Toad</link></nobr></color><\#332F2FFF>\. <nobr><link=kW>Structure</link></nobr></color>(?<post>.*?)$=${pre}방랑자 <#2D7621FF><nobr><link=kW>두꺼비</link></nobr></color>와 추억을 되새깁니다<#332F2FFF>. <nobr><link=kW>구조물</link></nobr></color>${post}
+sr:^(?<pre>[\s\S]*?)Gain (?<r379_g1>\d+(?:<[^>]+>\+\d+</color>)?) reroll(?<post>.*?)$=${pre}리롤 ${r379_g1}회를 얻습니다${post}
+sr:^(?<pre>[\s\S]*?)\?(?<post>.*?)$=${pre}?${post}
+sr:^(?<pre>[\s\S]*?)DAMAGE INCREASED(?<post>.*?)$=${pre}피해량 증가${post}
+sr:^(?<pre>[\s\S]*?)COST INCREASED(?<post>.*?)$=${pre}비용 증가${post}
+sr:^(?<pre>[\s\S]*?)Draws caked in gunk\.(?<post>.*?)$=${pre}오물이 덕지덕지 묻은 카드를 뽑습니다.${post}
+sr:^(?<pre>[\s\S]*?)When gunk consumed\\non a card(?<post>.*?)$=${pre}카드에서 오물이 소모될 때${post}
+sr:^(?<pre>[\s\S]*?)Rest(?<post>.*?)$=${pre}휴식${post}
+
 sr:^(?<pre>[\s\S]*?)(?<r19_g1><[^>]+>)(?<r19_g2>(?:<nobr>)?<link\=[^>]+>)IF FATAL</link>(?:</nobr>)?</color>,(?<post>.*?)$=${pre}${r19_g1}${r19_g2}처치 시</link></nobr></color>,${post}
 sr:^(?<pre>[\s\S]*?)(?<r20_g1><[^>]+>)(?<r20_g2>(?:<nobr>)?<link\=[^>]+>)IF GUNK IS REMOVED</link>(?:</nobr>)?</color> on this card,(?<post>.*?)$=${pre}${r20_g1}${r20_g2}오물 제거 시</link></nobr></color>,${post}
 sr:^(?<pre>[\s\S]*?)(?<r21_g1><[^>]+>)(?<r21_g2>(?:<nobr>)?<link\=[^>]+>)FOR EVERY GUNK REMOVED</link>(?:</nobr>)?</color>,(?<post>.*?)$=${pre}${r21_g1}${r21_g2}제거한 오물마다</link></nobr></color>,${post}
@@ -18,6 +38,7 @@ sr:^(?<pre>[\s\S]*?)(?<r27_g1><[^>]+>)(?<r27_g2>(?:<nobr>)?<link\=[^>]+>)IF ANY 
 sr:^(?<pre>[\s\S]*?)(?<r28_g1><[^>]+>)(?<r28_g2>(?:<nobr>)?<link\=[^>]+>)IF ALL GUNK REMOVED</link>(?:</nobr>)?</color> on any card,(?<post>.*?)$=${pre}${r28_g1}${r28_g2}모든 오물 제거 시</link></nobr></color>,${post}
 sr:^(?<pre>[\s\S]*?)(?<r29_g1><[^>]+>)(?<r29_g2>(?:<nobr>)?<link\=[^>]+>)IF GUNKED</link>(?:</nobr>)?</color>,(?<post>.*?)$=${pre}${r29_g1}${r29_g2}오물투성이일 시</link></nobr></color>,${post}
 sr:^(?<pre>[\s\S]*?)When an enemy dies,(?<post>.*?)$=${pre}적이 죽을 때,${post}
+sr:^(?<pre>[\s\S]*?)If you eat(?<post>.*?)$=${pre}음식을 먹을 시${post}
 sr:^(?<pre>[\s\S]*?)If you eat,(?<post>.*?)$=${pre}음식을 먹을 시,${post}
 sr:^(?<pre>[\s\S]*?)When a card gains damage,(?<post>.*?)$=${pre}카드가 피해량을 얻을 때,${post}
 sr:^(?<pre>[\s\S]*?)When an enemy kills itself,(?<post>.*?)$=${pre}적이 자멸할 때,${post}
@@ -27,6 +48,17 @@ sr:^(?<pre>[\s\S]*?)When you play 3 cards,(?<post>.*?)$=${pre}카드 3장을 사
 sr:^(?<pre>[\s\S]*?)When you play 4 cards,(?<post>.*?)$=${pre}카드 4장을 사용할 때,${post}
 sr:^(?<pre>[\s\S]*?)When you play 5 cards,(?<post>.*?)$=${pre}카드 5장을 사용할 때,${post}
 sr:^(?<pre>[\s\S]*?)When you gain max HP,(?<post>.*?)$=${pre}최대 체력을 얻을 때,${post}
+
+sr:^(?<pre>[\s\S]*?)If you take damage(?<post>.*?)$=${pre}피해를 받을 시${post}
+sr:^(?<pre>[\s\S]*?)If you dig(?<post>.*?)$=${pre}발굴할 시${post}
+sr:^(?<pre>[\s\S]*?)When you reveal(?<post>.*?)$=${pre}공개할 때${post}
+sr:^(?<pre>[\s\S]*?)When you set up a camp(?<post>.*?)$=${pre}캠프를 설치할 때${post}
+sr:^(?<pre>[\s\S]*?)When you open a lock(?<post>.*?)$=${pre}자물쇠를 열 때${post}
+sr:^(?<pre>[\s\S]*?)If you break(?<post>.*?)$=${pre}파괴할 시${post}
+sr:^(?<pre>[\s\S]*?)If you ignite(?<post>.*?)$=${pre}점화할 시${post}
+sr:^(?<pre>[\s\S]*?)If you feed(?<post>.*?)$=${pre}먹이를 줄 시${post}
+sr:^(?<pre>[\s\S]*?)If you fix(?<post>.*?)$=${pre}수리할 시${post}
+
 sr:^(?<pre>[\s\S]*?)If you take damage,(?<post>.*?)$=${pre}피해를 받을 시,${post}
 sr:^(?<pre>[\s\S]*?)If you dig,(?<post>.*?)$=${pre}발굴할 시,${post}
 sr:^(?<pre>[\s\S]*?)When you reveal,(?<post>.*?)$=${pre}공개할 때,${post}
@@ -132,9 +164,7 @@ sr:^(?<pre>[\s\S]*?)(?<e5_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</
 sr:^(?<pre>[\s\S]*?)(?<e6_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) in all\. WILL SPAWN A (?<e6_g2><[^>]+>)(?<e6_g3>.*?)</color> UPON DEATH(?<post>.*?)$=${pre}모든 적에게 ${e6_g1}. 사망 시 ${e6_g2}${e6_g3}</color>이 생성됩니다${post}
 sr:^(?<pre>[\s\S]*?)(?<e7_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) in random enemy\. WILL SPAWN A (?<e7_g2><[^>]+>)(?<e7_g3>.*?)</color> UPON DEATH(?<post>.*?)$=${pre}무작위 적에게 ${e7_g1}. 사망 시 ${e7_g2}${e7_g3}</color>이 생성됩니다${post}
 
-sr:^(?<pre>[\s\S]*?)Every enemy deals (?<r116_g1>\d+(?:<[^>]+>\+\d+</color>)?) damage to itself for every stack of their confusion(?<post>.*?)$=${pre}모든 적이 자신의 혼란 중첩마다 자신에게 ${r116_g1} 피해를 줍니다${post}
-sr:^(?<pre>[\s\S]*?)Reduce all numbers in your hand by (?<r117_g1>\d+(?:<[^>]+>\+\d+</color>)?)% \(Rounded Up\)(?<post>.*?)$=${pre}패의 모든 숫자를 ${r117_g1}% 감소시킵니다. (올림)${post}
-sr:^(?<pre>[\s\S]*?)Trigger all (?<r118_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) triggers in your hand(?<post>.*?)$=${pre}패에 있는 모든 ${r118_g1} 트리거를 발동합니다${post}
+
 
 sr:^(?<pre>[\s\S]*?)(?<e1_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) to all(?<post>.*?)$=${pre}모든 적에게 ${e1_g1}시킵니다${post}
 sr:^(?<pre>[\s\S]*?)(?<e2_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) to random enemy(?<post>.*?)$=${pre}무작위 적에게 ${e2_g1}시킵니다${post}
@@ -277,19 +307,6 @@ sr:^(?<pre>[\s\S]*?)Increase (?<c3a_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</
 sr:^(?<pre>[\s\S]*?)Increase (?<c4a_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c4_cls>.*?) cards to the RIGHT by (?<c4b_g1>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>.*?)$=${pre}오른쪽의${c4_cls} 카드의 ${c4a_g1}를 ${c4b_g1} 증가시킵니다${post}
 sr:^(?<pre>[\s\S]*?)Increase (?<c5a_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on target(?<c5_cls>.*?) card by (?<c5b_g1>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>.*?)$=${pre}대상${c5_cls} 카드의 ${c5a_g1}를 ${c5b_g1} 증가시킵니다${post}
 
-sr:^(?<pre>[\s\S]*?)Store (?<c0a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c0a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)(?<post>.*?)$=${pre}${c0a_g2} ${c0a_g1}을 저장합니다${post}
-sr:^(?<pre>[\s\S]*?)Store (?<c1a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c1a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on all(?<c1_cls>.*?) cards(?<post>.*?)$=${pre}모든${c1_cls} 카드에 ${c1a_g2} ${c1a_g1}을 저장합니다${post}
-sr:^(?<pre>[\s\S]*?)Store (?<c2a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c2a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on one random(?<c2_cls>.*?) card(?<post>.*?)$=${pre}무작위${c2_cls} 카드 하나에 ${c2a_g2} ${c2a_g1}을 저장합니다${post}
-sr:^(?<pre>[\s\S]*?)Store (?<c3a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c3a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c3_cls>.*?) cards to the LEFT(?<post>.*?)$=${pre}왼쪽의${c3_cls} 카드에 ${c3a_g2} ${c3a_g1}을 저장합니다${post}
-sr:^(?<pre>[\s\S]*?)Store (?<c4a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c4a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c4_cls>.*?) cards to the RIGHT(?<post>.*?)$=${pre}오른쪽의${c4_cls} 카드에 ${c4a_g2} ${c4a_g1}을 저장합니다${post}
-sr:^(?<pre>[\s\S]*?)Store (?<c5a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c5a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on target(?<c5_cls>.*?) card(?<post>.*?)$=${pre}대상${c5_cls} 카드에 ${c5a_g2} ${c5a_g1}을 저장합니다${post}
-
-sr:^(?<pre>[\s\S]*?)Consume (?<c0a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c0a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)(?<post>.*?)$=${pre}${c0a_g2} ${c0a_g1}을 소모합니다${post}
-sr:^(?<pre>[\s\S]*?)Consume (?<c1a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c1a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on all(?<c1_cls>.*?) cards(?<post>.*?)$=${pre}모든${c1_cls} 카드의 ${c1a_g2} ${c1a_g1}을 소모합니다${post}
-sr:^(?<pre>[\s\S]*?)Consume (?<c2a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c2a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on one random(?<c2_cls>.*?) card(?<post>.*?)$=${pre}무작위${c2_cls} 카드 하나의 ${c2a_g2} ${c2a_g1}을 소모합니다${post}
-sr:^(?<pre>[\s\S]*?)Consume (?<c3a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c3a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c3_cls>.*?) cards to the LEFT(?<post>.*?)$=${pre}왼쪽의${c3_cls} 카드의 ${c3a_g2} ${c3a_g1}을 소모합니다${post}
-sr:^(?<pre>[\s\S]*?)Consume (?<c4a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c4a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c4_cls>.*?) cards to the RIGHT(?<post>.*?)$=${pre}오른쪽의${c4_cls} 카드의 ${c4a_g2} ${c4a_g1}을 소모합니다${post}
-sr:^(?<pre>[\s\S]*?)Consume (?<c5a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c5a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on target(?<c5_cls>.*?) card(?<post>.*?)$=${pre}대상${c5_cls} 카드의 ${c5a_g2} ${c5a_g1}을 소모합니다${post}
 sr:^(?<pre>[\s\S]*?)(?<r152_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) (?<r152_g2>\d+(?:<[^>]+>\+\d+</color>)?) (?<r152_g3>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)(?<post>.*?)$=${pre}${r152_g1} ${r152_g3} ${r152_g2}${post}
 sr:^(?<pre>[\s\S]*?)Move (?<r153_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<r153_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) to random card(?<post>.*?)$=${pre}${r153_g2} ${r153_g1}을 무작위 카드로 옮깁니다${post}
 sr:^(?<pre>[\s\S]*?)Uses (?<r154_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<r154_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)(?<post>.*?)$=${pre}${r154_g2} ${r154_g1}을 사용합니다${post}
@@ -357,10 +374,13 @@ sr:^(?<pre>[\s\S]*?)Reduce all status effects by (?<e6_g1>\d+(?:<[^>]+>\+\d+</co
 sr:^(?<pre>[\s\S]*?)Reduce random enemy status effects by (?<e7_g1>\d+(?:<[^>]+>\+\d+</color>)?)(?<post>.*?)$=${pre}무작위 적의 상태 효과를 ${e7_g1} 감소시킵니다${post}
 sr:^(?<pre>[\s\S]*?)when a (?<r180_g1><[^>]+>)(?<r180_g2>.*?)</color> is added to your hand,(?<post>.*?)$=${pre}${r180_g1}${r180_g2}</color>이 패에 추가될 때,${post}
 sr:^(?<pre>[\s\S]*?)when a card with (?<r181_g1><[^>]+>)(?<r181_g2>.*?)</color> is added to your hand,(?<post>.*?)$=${pre}${r181_g1}${r181_g2}</color>을 가진 카드가 패에 추가될 때,${post}
-sr:^(?<pre>[\s\S]*?)Make (?<r182_g1>\d+(?:<[^>]+>\+\d+</color>)?)(?<r182_g2><[^>]+>)(?<r182_g3>.*?)</color>(?<post>.*?)$=${pre}${r182_g2}${r182_g3}</color> ${r182_g1}장을 생성합니다${post}
-sr:^(?<pre>[\s\S]*?)Gain (?<r183_g1>\d+(?:<[^>]+>\+\d+</color>)?)(?<r183_g2><[^>]+>)(?<r183_g3>.*?)</color> instead(?<post>.*?)$=${pre}대신 ${r183_g2}${r183_g3}</color> ${r183_g1}장을 얻습니다${post}
 
-sr:^(?<pre>[\s\S]*?)Make (?<r185_g1>\d+(?:<[^>]+>\+\d+</color>)?)(?<r185_g2><[^>]+>)(?<r185_g3>.*?)</color> with damage equal to protein(?<post>.*?)$=${pre}피해량이 단백질과 같은 ${r185_g2}${r185_g3}</color> ${r185_g1}장을 생성합니다${post}
+sr:^(?<pre>[\s\S]*?)Make (?<r182_g1>\d+(?:<[^>]+>\+\d+</color>)?)(?:\s*X\s*)?(?<r182_g2><[^>]+>)(?<r182_g3>.*?)</color>(?<post>.*?)$=${pre}${r182_g2}${r182_g3}</color> ${r182_g1}장을 생성합니다${post}
+
+sr:^(?<pre>[\s\S]*?)Gain (?<r183_g1>\d+(?:<[^>]+>\+\d+</color>)?)(?:\s*X\s*)?(?<r183_g2><[^>]+>)(?<r183_g3>.*?)</color> instead(?<post>.*?)$=${pre}대신 ${r183_g2}${r183_g3}</color> ${r183_g1}장을 얻습니다${post}
+
+sr:^(?<pre>[\s\S]*?)Make (?<r185_g1>\d+(?:<[^>]+>\+\d+</color>)?)(?:\s*X\s*)?(?<r185_g2><[^>]+>)(?<r185_g3>.*?)</color> with damage equal to protein(?<post>.*?)$=${pre}피해량이 단백질과 같은 ${r185_g2}${r185_g3}</color> ${r185_g1}장을 생성합니다${post}
+
 sr:^(?<pre>[\s\S]*?)(S|s)tart next (?<r186_g1>.*?) with (?<r186_g2><[^>]+>)(?<r186_g3>.*?)</color>(?<post>.*?)$=${pre}다음 ${r186_g1} 시작시 ${r186_g2}${r186_g3}</color>을 보유합니다${post}
 sr:^(?<pre>[\s\S]*?)(?<r187_g1>\d+(?:<[^>]+>\+\d+</color>)?) cost of all Attacks and Skills(?<post>.*?)$=${pre}모든 공격과 스킬의 비용 ${r187_g1}${post}
 sr:^(?<pre>[\s\S]*?)bleed for (?<r188_g1>\d+(?:<[^>]+>\+\d+</color>)?) damage(?<post>.*?)$=${pre}${r188_g1} 피해만큼 출혈${post}
@@ -522,6 +542,7 @@ sr:^(?<pre>[\s\S]*?)Combat(?<post>.*?)$=${pre}전투${post}
 sr:^(?<pre>[\s\S]*?)Foresight(?<post>.*?)$=${pre}예견${post}
 sr:^(?<pre>[\s\S]*?)New card in your deck\.(?<post>.*?)$=${pre}덱에 새 카드가 추가됩니다.${post}
 sr:^(?<pre>[\s\S]*?)Charge me please\.(?<post>.*?)$=${pre}충전해 주세요.${post}
+
 sr:^(?<pre>[\s\S]*?)<b>BREAK</b> to reuse in future explorations\.(?<post>.*?)$=${pre}향후 탐험에서 재사용하려면 <b>파괴</b>하세요.${post}
 sr:^(?<pre>[\s\S]*?)<b>DIG</b> to reuse in future explorations\.(?<post>.*?)$=${pre}향후 탐험에서 재사용하려면 <b>발굴</b>하세요.${post}
 sr:^(?<pre>[\s\S]*?)<b>FEED</b> to reuse in future explorations\.(?<post>.*?)$=${pre}향후 탐험에서 재사용하려면 <b>먹이</b>를 주세요.${post}
@@ -535,30 +556,17 @@ sr:^(?<pre>[\s\S]*?)Degunk(?<post>.*?)$=${pre}오물 제거${post}
 sr:^(?<pre>[\s\S]*?)Grow Closer(?<post>.*?)$=${pre}더 가까워지세요${post}
 sr:^(?<pre>[\s\S]*?)WHERE DO YOU DIG\?(?<post>.*?)$=${pre}어디를 발굴하시겠습니까?${post}
 sr:^(?<pre>[\s\S]*?)EVOLVING(?<post>.*?)$=${pre}진화 중${post}
-sr:^(?<pre>[\s\S]*?)New(?<post>.*?)$=${pre}신규${post}
+
 sr:^(?<pre>[\s\S]*?)GUNKED: (?<r367_g1>\d+(?:<[^>]+>\+\d+</color>)?)(?<post>.*?)$=${pre}오물투성이: ${r367_g1}${post}
 sr:^(?<pre>[\s\S]*?)OVERCHARGED(?<post>.*?)$=${pre}과충전됨${post}
 sr:^(?<pre>[\s\S]*?)IfFoodEntersHand(?<post>.*?)$=${pre}음식이 패에 들어올 때${post}
 sr:^(?<pre>[\s\S]*?)BioHeal(?<post>.*?)$=${pre}생체 회복${post}
-sr:^(?<pre>[\s\S]*?)STORED GUNK(?<post>.*?)$=${pre}저장된 오물${post}
-sr:^(?<pre>[\s\S]*?)Consult an expert\.\\r\\nHarness the power\\r\\nof (?<r372_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\\r\\n(?<post>.*?)$=${pre}전문가와 상담합니다.\r\n${r372_g1}의 힘을\r\n활용합니다\r\n${post}
-sr:^(?<pre>[\s\S]*?)Feed a specimen to gain data<\#1C1F4BFF><nobr>(?<post>.*?)$=${pre}표본에게 먹이를 줘 데이터를 얻습니다<#1C1F4BFF><nobr>${post}
-sr:^(?<pre>[\s\S]*?)Toad Experiment WIP text(?<post>.*?)$=${pre}두꺼비 실험 WIP 텍스트${post}
-sr:^(?<pre>[\s\S]*?)Unlock strategic protocols(?<post>.*?)$=${pre}전략 프로토콜을 개방합니다${post}
-sr:^(?<pre>[\s\S]*?)ERECT <\#2D7621FF><nobr><link=kW>Toad</link></nobr></color> SHRINE\.\nFEED THE TOAD, FORGET A COMBAT CARD\. <\#332F2FFF><nobr><link=kW>Structure</link></nobr></color>(?<post>.*?)$=${pre}<#2D7621FF><nobr><link=kW>두꺼비</link></nobr></color> 신전을 세웁니다.\n두꺼비에게 먹이를 주고, 전투 카드를 망각합니다. <#332F2FFF><nobr><link=kW>구조물</link></nobr></color>${post}
-sr:^(?<pre>[\s\S]*?)THE CARD <\#2D7621FF><nobr><link=kW>Toad</link></nobr></color> SITS UPON THEIR THRONE<\#332F2FFF>\. <nobr><link=kW>Structure</link></nobr></color>(?<post>.*?)$=${pre}카드 <#2D7621FF><nobr><link=kW>두꺼비</link></nobr></color>가 왕좌에 앉아 있습니다<#332F2FFF>. <nobr><link=kW>구조물</link></nobr></color>${post}
-sr:^(?<pre>[\s\S]*?)REMINISCE WITH THE VAGABOND <\#2D7621FF><nobr><link=kW>Toad</link></nobr></color><\#332F2FFF>\. <nobr><link=kW>Structure</link></nobr></color>(?<post>.*?)$=${pre}방랑자 <#2D7621FF><nobr><link=kW>두꺼비</link></nobr></color>와 추억을 되새깁니다<#332F2FFF>. <nobr><link=kW>구조물</link></nobr></color>${post}
-sr:^(?<pre>[\s\S]*?)Gain (?<r379_g1>\d+(?:<[^>]+>\+\d+</color>)?) reroll(?<post>.*?)$=${pre}리롤 ${r379_g1}회를 얻습니다${post}
-sr:^(?<pre>[\s\S]*?)\?(?<post>.*?)$=${pre}?${post}
-sr:^(?<pre>[\s\S]*?)DAMAGE INCREASED(?<post>.*?)$=${pre}피해량 증가${post}
-sr:^(?<pre>[\s\S]*?)COST INCREASED(?<post>.*?)$=${pre}비용 증가${post}
-sr:^(?<pre>[\s\S]*?)Draws caked in gunk\.(?<post>.*?)$=${pre}오물이 덕지덕지 묻은 카드를 뽑습니다.${post}
-sr:^(?<pre>[\s\S]*?)When gunk consumed\\non a card(?<post>.*?)$=${pre}카드에서 오물이 소모될 때${post}
-sr:^(?<pre>[\s\S]*?)Rest(?<post>.*?)$=${pre}휴식${post}
-sr:^(?<pre>[\s\S]*?)<nobr> for every (?<r386_g1><[^>]+>)<link=kW>(?<r386_g2>.*?)</color></link></nobr> in hand\. (?<r386_g3>.*?): (?<r386_g4><[^>]+>)<b>(?<r386_g5>\d+(?:<[^>]+>\+\d+</color>)?)</b></color>(?<post>.*?)$=${pre}<nobr>패의 ${r386_g1}<link=kW>${r386_g2}</color></link></nobr>마다. ${r386_g3}: ${r386_g4}<b>${r386_g5}</b></color>${post}
-sr:^(?<pre>[\s\S]*?)<nobr> for every (?<r387_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)</nobr> in hand\. Gunk: (?<r387_g2><[^>]+>)<b>(?<r387_g3>\d+(?:<[^>]+>\+\d+</color>)?)</b></color>(?<post>.*?)$=${pre}<nobr>패의 ${r387_g1}</nobr>마다. 오물: ${r387_g2}<b>${r387_g3}</b></color>${post}
-sr:^(?<pre>[\s\S]*?)<nobr> for every (?<r388_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)</nobr> in room\. Warmth: (?<r388_g2><[^>]+>)<b>(?<r388_g3>\d+(?:<[^>]+>\+\d+</color>)?)</b></color>(?<post>.*?)$=${pre}<nobr>방의 ${r388_g1}</nobr>마다. 온기: ${r388_g2}<b>${r388_g3}</b></color>${post}
-sr:^(?<pre>[\s\S]*?)<nobr> for Net (?<r389_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)</nobr> in room\. Warmth: (?<r389_g2><[^>]+>)<b>(?<r389_g3>\d+(?:<[^>]+>\+\d+</color>)?)</b></color>(?<post>.*?)$=${pre}<nobr>방의 총 ${r389_g1}</nobr>마다. 온기: ${r389_g2}<b>${r389_g3}</b></color>${post}
+
+sr:^(?<pre>[\s\S]*?)<nobr> for every (?<r386_g1><[^>]+>)<link=kW>(?<r386_g2>.*?)</color></link></nobr> in hand\. (?<r386_g3>.*?): (?<r386_g4><[^>]+>)<b>(?<r386_g5>\d+(?:<[^>]+>\+\d+</color>)?)</b></color>(?<post>.*?)$=${pre}<nobr>. 패의 ${r386_g1}<link=kW>${r386_g2}</color></link></nobr>마다 반복합니다. ${r386_g3}: ${r386_g4}<b>${r386_g5}</b></color>${post}
+sr:^(?<pre>[\s\S]*?)<nobr> for every (?<r387_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)</nobr> in hand\. Gunk: (?<r387_g2><[^>]+>)<b>(?<r387_g3>\d+(?:<[^>]+>\+\d+</color>)?)</b></color>(?<post>.*?)$=${pre}. <nobr>패의 ${r387_g1}</nobr>마다 반복합니다. 오물: ${r387_g2}<b>${r387_g3}</b></color>${post}
+sr:^(?<pre>[\s\S]*?)<nobr> for every (?<r388_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)</nobr> in room\. Warmth: (?<r388_g2><[^>]+>)<b>(?<r388_g3>\d+(?:<[^>]+>\+\d+</color>)?)</b></color>(?<post>.*?)$=${pre}. <nobr>방의 ${r388_g1}</nobr>마다 반복합니다. 온기: ${r388_g2}<b>${r388_g3}</b></color>${post}
+sr:^(?<pre>[\s\S]*?)<nobr> for Net (?<r389_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)</nobr> in room\. Warmth: (?<r389_g2><[^>]+>)<b>(?<r389_g3>\d+(?:<[^>]+>\+\d+</color>)?)</b></color>(?<post>.*?)$=${pre}. <nobr>방의 총 ${r389_g1}</nobr>마다 반복합니다. 온기: ${r389_g2}<b>${r389_g3}</b></color>${post}
+
 sr:^(?<pre>[\s\S]*?)GUNK STORED:(?<post>.*?)$=${pre}저장된 오물:${post}
 sr:^(?<pre>[\s\S]*?)TURRET TRIGGERED(?<post>.*?)$=${pre}포탑 발동됨${post}
 sr:^(?<pre>[\s\S]*?)BATTERY INCREASED(?<post>.*?)$=${pre}배터리 증가됨${post}
@@ -585,6 +593,19 @@ sr:^(?<pre>[\s\S]*?)(?<e5_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</
 sr:^(?<pre>[\s\S]*?)(?<e6_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) all (?<e6_g2>\d+(?:<[^>]+>\+\d+</color>)?) times(?<post>.*?)$=${pre}모든 적에게 ${e6_g1}을 ${e6_g2}번 적용합니다${post}
 sr:^(?<pre>[\s\S]*?)(?<e7_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) random enemy (?<e7_g2>\d+(?:<[^>]+>\+\d+</color>)?) times(?<post>.*?)$=${pre}무작위 적에게 ${e7_g1}을 ${e7_g2}번 적용합니다${post}
 
+sr:^(?<pre>[\s\S]*?)Store (?<c0a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c0a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)(?<post>.*?)$=${pre}${c0a_g2} ${c0a_g1}을 저장합니다${post}
+sr:^(?<pre>[\s\S]*?)Store (?<c1a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c1a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on all(?<c1_cls>.*?) cards(?<post>.*?)$=${pre}모든${c1_cls} 카드에 ${c1a_g2} ${c1a_g1}을 저장합니다${post}
+sr:^(?<pre>[\s\S]*?)Store (?<c2a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c2a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on one random(?<c2_cls>.*?) card(?<post>.*?)$=${pre}무작위${c2_cls} 카드 하나에 ${c2a_g2} ${c2a_g1}을 저장합니다${post}
+sr:^(?<pre>[\s\S]*?)Store (?<c3a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c3a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c3_cls>.*?) cards to the LEFT(?<post>.*?)$=${pre}왼쪽의${c3_cls} 카드에 ${c3a_g2} ${c3a_g1}을 저장합니다${post}
+sr:^(?<pre>[\s\S]*?)Store (?<c4a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c4a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c4_cls>.*?) cards to the RIGHT(?<post>.*?)$=${pre}오른쪽의${c4_cls} 카드에 ${c4a_g2} ${c4a_g1}을 저장합니다${post}
+sr:^(?<pre>[\s\S]*?)Store (?<c5a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c5a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on target(?<c5_cls>.*?) card(?<post>.*?)$=${pre}대상${c5_cls} 카드에 ${c5a_g2} ${c5a_g1}을 저장합니다${post}
+
+sr:^(?<pre>[\s\S]*?)Consume (?<c0a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c0a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)(?<post>.*?)$=${pre}${c0a_g2} ${c0a_g1}을 소모합니다${post}
+sr:^(?<pre>[\s\S]*?)Consume (?<c1a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c1a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on all(?<c1_cls>.*?) cards(?<post>.*?)$=${pre}모든${c1_cls} 카드의 ${c1a_g2} ${c1a_g1}을 소모합니다${post}
+sr:^(?<pre>[\s\S]*?)Consume (?<c2a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c2a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on one random(?<c2_cls>.*?) card(?<post>.*?)$=${pre}무작위${c2_cls} 카드 하나의 ${c2a_g2} ${c2a_g1}을 소모합니다${post}
+sr:^(?<pre>[\s\S]*?)Consume (?<c3a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c3a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c3_cls>.*?) cards to the LEFT(?<post>.*?)$=${pre}왼쪽의${c3_cls} 카드의 ${c3a_g2} ${c3a_g1}을 소모합니다${post}
+sr:^(?<pre>[\s\S]*?)Consume (?<c4a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c4a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on(?<c4_cls>.*?) cards to the RIGHT(?<post>.*?)$=${pre}오른쪽의${c4_cls} 카드의 ${c4a_g2} ${c4a_g1}을 소모합니다${post}
+sr:^(?<pre>[\s\S]*?)Consume (?<c5a_g1>\d+(?:<[^>]+>\+\d+</color>)?) (?<c5a_g2>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) on target(?<c5_cls>.*?) card(?<post>.*?)$=${pre}대상${c5_cls} 카드의 ${c5a_g2} ${c5a_g1}을 소모합니다${post}
 
 sr:^(?<pre>[\s\S]*?)Apply (?<e0_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)(?<post>.*?)$=${pre}${e0_g1}을(를) 적용합니다${post}
 sr:^(?<pre>[\s\S]*?)Apply (?<e1_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) to all(?<post>.*?)$=${pre}모든 적에게 ${e1_g1}을(를) 적용합니다${post}
@@ -632,6 +653,10 @@ sr:^(?<pre>[\s\S]*?)Add (?<e7_g1>\+?\d+(?:<[^>]+>\+\d+</color>)?) (?<e7_g2>(?:<[
 sr:^(?<pre>[\s\S]*?)Start next (?<deck>.*?) with (?<hex><[^>]+>)(?<card>.*?)</color>(?<post>.*?)$=${pre}다음 ${deck} 시작 시 ${hex}${card}</color>을(를) 보유합니다${post}
 
 sr:^(?<pre>[\s\S]*?)COST: (?<n>\d+(?:<[^>]+>\+\d+</color>)?) (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)(?<post>.*?)$=${pre}비용: ${n} ${link}${post}
+
+sr:^(?<pre>[\s\S]*?)Every enemy deals (?<r116_g1>\d+(?:<[^>]+>\+\d+</color>)?) damage to itself for every stack of their confusion(?<post>.*?)$=${pre}모든 적이 자신의 혼란 중첩마다 자신에게 ${r116_g1} 피해를 줍니다${post}
+sr:^(?<pre>[\s\S]*?)Reduce all numbers in your hand by (?<r117_g1>\d+(?:<[^>]+>\+\d+</color>)?)% \(Rounded Up\)(?<post>.*?)$=${pre}패의 모든 숫자를 ${r117_g1}% 감소시킵니다. (올림)${post}
+sr:^(?<pre>[\s\S]*?)Trigger all (?<r118_g1>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) triggers in your hand(?<post>.*?)$=${pre}패에 있는 모든 ${r118_g1} 트리거를 발동합니다${post}
 
 sr:^(?<pre>[\s\S]*?)No specific card class\.(?<post>.*?)$=${pre}특정 카드 클래스 없음.${post}
 sr:^(?<pre>[\s\S]*?)Consumed for beneficial effects\.(?<post>.*?)$=${pre}이로운 효과를 위해 소모됩니다.${post}
@@ -716,6 +741,7 @@ Horn Wort=뿔이끼
 Crusty Curse=찌든때의 저주
 SELF=자신
 ALLIES=아군
+SELF AND ALLIES=자신과 아군
 PLAYER=플레이어
 
 sr:^(?<pre>[\s\S]*?)HAS (?<g89_1>.+?)\.(?<post>[\s\S]*?)$=${pre}${g89_1} 상태를 가지고 있습니다.${post}
@@ -1918,6 +1944,7 @@ Death=죽음
 Special=특수
 Foresight=예견
 IF FATAL=처치 시
+If fatal=처치 시
 IF GUNK IS REMOVED on this card=오물 제거 시
 FOR EVERY GUNK REMOVED=제거한 오물마다
 IF FULLY UNGUNKED=완전히 오물 제거 시
@@ -2644,9 +2671,9 @@ sr:^(?<pre>[\s\S]*?)STORED GLOOM \(\{gloom-damage\}\) BECOMES MAX HEALTH, CONSUM
 sr:^(?<pre>[\s\S]*?)Digging here rewards cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}여기서 발굴하면 ${biome} 터널 고유의 카드를 보상으로 얻습니다.${post}
 sr:^(?<pre>[\s\S]*?)Fertile ground\\nFind cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}비옥한 땅\\n${biome} 터널 고유의 카드를 발견합니다.${post}
 sr:^(?<pre>[\s\S]*?)(?<biome>.*?) Tunnel:\\n(?<post>[\s\S]*?)$=${pre}${biome} 터널:\\n${post}
-sr:^(?<pre>[\s\S]*?)Edibles: (?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>[\s\S]*?)$=${pre}식용품: ${n}${post}
+sr:^(?<pre>[\s\S]*?)Edibles:\s*(?<r_edibles_n>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>[\s\S]*?)$=${pre}식용품: ${r_edibles_n}${post}
 sr:^(?<pre>[\s\S]*?)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?) reusable cards\.(?<post>[\s\S]*?)$=${pre}${n}개의 재사용 가능 카드.${post}
-sr:^(?<pre>[\s\S]*?)TRADE\. (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\.(?<post>[\s\S]*?)$=${pre}거래. ${link}로.${post}
+sr:^(?<pre>[\s\S]*?)TRADE\. (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\.(?<post>[\s\S]*?)$=${pre}거래. ${link}으로.${post}
 sr:^(?<pre>[\s\S]*?)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?) (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) PLEASE!(?<post>[\s\S]*?)$=${pre}${link} ${n}개 줘!${post}
 sr:^(?<pre>[\s\S]*?)NO (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\. TIME TO GO!(?<post>[\s\S]*?)$=${pre}${link}가 없다. 갈 시간!${post}
 sr:^(?<pre>[\s\S]*?)WEAPONS FOR (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\?(?<post>[\s\S]*?)$=${pre}무기랑 ${link} 거래?${post}
@@ -2668,4 +2695,5 @@ Please feed our starving families and our addiction to toasties by getting the f
 We are still cooking up something good...\nComing soon in <b>early access</b>!=아직 맛있는 걸 열심히 준비 중입니다... <b>얼리 액세스</b>로 곧 찾아옵니다!
 ACCESSIBILITY=접근성
 - Let us know what you want here please!=- 여기에 뭐가 들어가면 좋을지 얘기해주세요!
-
+Evolving.=진화중.
+sr:^(?<pre>[\s\S]*?)Unlock a gloom door.(?<post>[\s\S]*?)$=${pre}글룸 관문을 개방합니다.${post}
