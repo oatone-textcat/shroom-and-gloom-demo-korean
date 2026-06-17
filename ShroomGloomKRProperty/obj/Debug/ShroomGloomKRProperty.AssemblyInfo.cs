@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShroomGloomKRProperty")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55d875afd1b2e71598310691ee5cb21b37b19155")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShroomGloomKRProperty")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShroomGloomKRProperty")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

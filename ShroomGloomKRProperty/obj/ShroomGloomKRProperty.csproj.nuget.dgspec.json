@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saimi\\source\\repos\\ShroomGloomKRProperty\\ShroomGloomKRProperty.csproj": {}
+    "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\ShroomGloomKRProperty\\ShroomGloomKRProperty.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saimi\\source\\repos\\ShroomGloomKRProperty\\ShroomGloomKRProperty.csproj": {
+    "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\ShroomGloomKRProperty\\ShroomGloomKRProperty.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saimi\\source\\repos\\ShroomGloomKRProperty\\ShroomGloomKRProperty.csproj",
+        "projectUniqueName": "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\ShroomGloomKRProperty\\ShroomGloomKRProperty.csproj",
         "projectName": "ShroomGloomKRProperty",
-        "projectPath": "C:\\Users\\saimi\\source\\repos\\ShroomGloomKRProperty\\ShroomGloomKRProperty.csproj",
+        "projectPath": "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\ShroomGloomKRProperty\\ShroomGloomKRProperty.csproj",
         "packagesPath": "C:\\Users\\saimi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saimi\\source\\repos\\ShroomGloomKRProperty\\obj\\",
+        "outputPath": "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\ShroomGloomKRProperty\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\saimi\\AppData\\Roaming\\NuGet\\NuGet.Config",
