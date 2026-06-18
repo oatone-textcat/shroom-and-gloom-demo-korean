@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\팀 글냥이 번역\\Gamble_with_friends\\gamble-with-friends-korean\\TextSpacingMod\\TextSpacingMod.csproj": {}
+    "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\TextSpacingMod\\TextSpacingMod.csproj": {}
   },
   "projects": {
-    "D:\\팀 글냥이 번역\\Gamble_with_friends\\gamble-with-friends-korean\\TextSpacingMod\\TextSpacingMod.csproj": {
+    "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\TextSpacingMod\\TextSpacingMod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\팀 글냥이 번역\\Gamble_with_friends\\gamble-with-friends-korean\\TextSpacingMod\\TextSpacingMod.csproj",
+        "projectUniqueName": "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\TextSpacingMod\\TextSpacingMod.csproj",
         "projectName": "TextSpacingMod",
-        "projectPath": "D:\\팀 글냥이 번역\\Gamble_with_friends\\gamble-with-friends-korean\\TextSpacingMod\\TextSpacingMod.csproj",
+        "projectPath": "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\TextSpacingMod\\TextSpacingMod.csproj",
         "packagesPath": "C:\\Users\\saimi\\.nuget\\packages\\",
-        "outputPath": "D:\\팀 글냥이 번역\\Gamble_with_friends\\gamble-with-friends-korean\\TextSpacingMod\\obj\\",
+        "outputPath": "D:\\팀 글냥이 번역\\슈룸앤글룸\\shroom-and-gloom-demo-korean\\TextSpacingMod\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\saimi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,7 +64,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314\\RuntimeIdentifierGraph.json"
         }
       }
     }

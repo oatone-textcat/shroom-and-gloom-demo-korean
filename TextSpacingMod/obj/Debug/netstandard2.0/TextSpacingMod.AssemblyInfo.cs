@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TextSpacingMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb7d180656019366d2864fab8aaae22b8c9b0547")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b281aadd537b4325f01c21317c190d816b5d382e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TextSpacingMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TextSpacingMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
