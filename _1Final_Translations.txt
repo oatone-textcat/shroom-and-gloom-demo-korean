@@ -172,7 +172,7 @@ Armoured=장갑
 Bless=축복
 Brainless=무지성
 Buzzkill=흐름 끊기
-Lodged=박힘
+Lodged=부착
 Confused=혼란
 Crippled=무력화
 Deathless=불사
@@ -218,7 +218,7 @@ sr:^(?<pre>[\s\S]*?)DAMAGE INCREASED(?<post>.*?)$=${pre}피해량 증가${post}
 sr:^(?<pre>[\s\S]*?)COST INCREASED(?<post>.*?)$=${pre}비용 증가${post}
 sr:^(?<pre>[\s\S]*?)Draws caked in gunk\.(?<post>.*?)$=${pre}오물이 덕지덕지 묻은 카드를 뽑습니다.${post}
 sr:^(?<pre>[\s\S]*?)When gunk consumed\\non a card(?<post>.*?)$=${pre}카드에서 오물이 소모될 때${post}
-sr:^(?<pre>[\s\S]*?)Rest(?<post>.*?)$=${pre}휴식${post}
+# sr:^(?<pre>[\s\S]*?)Rest(?<post>.*?)$=${pre}휴식${post}
 
 sr:^(?<pre>[\s\S]*?)(?<r19_g1><[^>]+>)(?<r19_g2>(?:<nobr>)?<link\=[^>]+>)IF FATAL</link>(?:</nobr>)?</color>,(?<post>.*?)$=${pre}${r19_g1}${r19_g2}처치 시</link></nobr></color>,${post}
 sr:^(?<pre>[\s\S]*?)(?<r20_g1><[^>]+>)(?<r20_g2>(?:<nobr>)?<link\=[^>]+>)IF GUNK IS REMOVED</link>(?:</nobr>)?</color> on this card,(?<post>.*?)$=${pre}${r20_g1}${r20_g2}오물 제거 시</link></nobr></color>,${post}
@@ -898,7 +898,7 @@ Armoured=장갑
 Bless=축복
 Brainless=무지성
 Buzzkill=흐름 끊기
-Lodged=박힘
+Lodged=부착
 Confused=혼란
 Crippled=무력화
 Deathless=불사
@@ -1008,7 +1008,7 @@ sr:^(?<pre>[\s\S]*?)(?<g122_1><[^>]+>)\\nWILL CREATE A NEW ENEMY WHEN DAMAGED\.<
 sr:^(?<pre>[\s\S]*?)(?<g123_1><[^>]+>)\\nATTEMPTS TO JOIN FORCES WITH KIN\.</color>(?<post>[\s\S]*?)$=${pre}${g123_1}\n동족과 힘을 합치려고 시도합니다.</color>${post}
 sr:^(?<pre>[\s\S]*?)(?<g124_1><[^>]+>)\\nREGENERATES (?<g124_2>\+?\d+(?:<[^>]+>\+\d+</color>)?) HEALTH AT THE START OF TURN</color>(?<post>[\s\S]*?)$=${pre}${g124_1}\n턴 시작 시 체력을 ${g124_2}만큼 재생합니다</color>${post}
 sr:^(?<pre>[\s\S]*?)(?<g125_1><[^>]+>)\\nRETALIATES FOR (?<g125_2>\+?\d+(?:<[^>]+>\+\d+</color>)?) WHEN DAMAGED\. UNLESS FATAL\.</color>(?<post>[\s\S]*?)$=${pre}${g125_1}\n피해를 입으면 ${g125_2}만큼 반격합니다. 치명상이 아닐 경우에만 발동합니다.</color>${post}
-sr:^(?<pre>[\s\S]*?)(?<g126_1><[^>]+>)\\nWILL INCREASE THE DAMAGE\\nOF THE KILLING CARD BY (?<g126_2>\+?\d+(?:<[^>]+>\+\d+</color>)?)\.</color>(?<post>[\s\S]*?)$=${pre}${g126_1}\n자신을 처치한 카드의 피해량을\n${g126_2}만큼 증가시킵니다.</color>${post}
+sr:^(?<pre>[\s\S]*?)(?<g126_1><[^>]+>)\\nWILL INCREASE THE DAMAGE\\nOF THE KILLING CARD BY (?<g126_2>\+?\d+(?:<[^>]+>\+\d+</color>)?)\.</color>(?<post>[\s\S]*?)$=${pre}${g126_1}\n이 적을 처치한 카드의 피해량을\n${g126_2}만큼 증가시킵니다.</color>${post}
 sr:^(?<pre>[\s\S]*?)(?<g127_1><[^>]+>)\\nWILL ADD GUNK TO A RANDOM CARD IF DAMAGED\.</color>(?<post>[\s\S]*?)$=${pre}${g127_1}\n피해를 입으면 무작위 카드에 오물을 추가합니다.</color>${post}
 sr:^(?<pre>[\s\S]*?)(?<g128_1><[^>]+>)\\nWILL GUNK ALL CARDS IF KILLED\.</color>(?<post>[\s\S]*?)$=${pre}${g128_1}\n처치당할 경우 모든 카드에 오물을 묻힙니다.</color>${post}
 sr:^(?<pre>[\s\S]*?)(?<g129_1><[^>]+>)\\nWILL HEAL 10% OF MAX HP AT THE START OF EACH TURN\.</color>(?<post>[\s\S]*?)$=${pre}${g129_1}\n매 턴 시작 시 최대 체력의 10%를 치유합니다.</color>${post}
@@ -2370,7 +2370,7 @@ MAYBE A WAY INTO=더 글룸으로
 THE GLOOM?=들어가는 길일지도?
 NO THANKS=괜찮습니다
 REROLL=새로고침
-TAKE=선택
+TAKE=가져가기
 OVERCHARGED=과충전됨
 LOOT THE CORPSE=시체 수색
 A pitiful legacy=볼품없는 유산
@@ -2683,12 +2683,12 @@ TOASTIES I WANT.\nEAT I WILL.=토스티 원한다.\n먹을 거다 나.
 
 # World_en 정규식
 
-sr:^(?<pre>[\s\S]*?)ADD \{gloom-damage\} GLOOM DAMAGE(?<post>[\s\S]*?)$=${pre}{gloom-damage} 글룸 피해 추가${post}
-sr:^(?<pre>[\s\S]*?)STORED GLOOM \(\{gloom-damage\}\) BECOMES MAX HEALTH, CONSUME(?<post>[\s\S]*?)$=${pre}저장된 글룸({gloom-damage})이 최대 체력이 되며, 소모됩니다${post}
+sr:^(?<pre>[\s\S]*?)ADD (?<gloom_damage>\d+) GLOOM DAMAGE(?<post>[\s\S]*?)$=${pre}${gloom_damage} 글룸 피해 추가${post}
+sr:^(?<pre>[\s\S]*?)STORED GLOOM \((?<gloom_damage>\d+)\) BECOMES MAX HEALTH, CONSUME(?<post>[\s\S]*?)$=${pre}저장된 글룸(${gloom_damage})이 최대 체력이 되며, 소모됩니다${post}
 sr:^(?<pre>[\s\S]*?)Digging here rewards cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}여기서 발굴하면 ${biome} 터널 고유의 카드를 보상으로 얻습니다.${post}
 sr:^(?<pre>[\s\S]*?)Fertile ground\\nFind cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}비옥한 땅\\n${biome} 터널 고유의 카드를 발견합니다.${post}
 sr:^(?<pre>[\s\S]*?)(?<biome>.*?) Tunnel:\\n(?<post>[\s\S]*?)$=${pre}${biome} 터널:\\n${post}
-sr:^(?<pre>[\s\S]*?)Edibles:\s*(?<r_edibles_n>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>[\s\S]*?)$=${pre}식품: ${r_edibles_n}${post}
+sr:^(?<pre>[\s\S]*?)Edibles:\s*(?<r_edibles_n>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>[\s\S]*?)$=${pre}식품: ${r_edibles_n}개${post}
 sr:^(?<pre>[\s\S]*?)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?) reusable cards\.(?<post>[\s\S]*?)$=${pre}${n}개의 재사용 가능 카드.${post}
 sr:^(?<pre>[\s\S]*?)TRADE\. (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\.(?<post>[\s\S]*?)$=${pre}거래. ${link}으로.${post}
 sr:^(?<pre>[\s\S]*?)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?) (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) PLEASE!(?<post>[\s\S]*?)$=${pre}${link} ${n}개 줘!${post}
@@ -2741,6 +2741,7 @@ IS A Limb.=팔다리입니다.
 
 # UI_en 정규식
 
-sr:"Threat:\s*(\d+).+?Warmth:\s*-(\d+).+?<color\=#FF5555><b>Take (\d+) Damage</b>"="위협: $1\n온기: -$2\n<color=#FF5555><b>피해 $3 입음</b></color>"
-sr:"Warmth:\s*(\d+).+?Threat:\s*-(\d+).+?<color\=#55FF55><b>Safe for (\d+)</b>"="온기: $1\n위협: -$2\n<color=#55FF55><b>$3 동안 안전함</b></color>"
-
+sr:"Warmth: (-?\d+)\nThreat: (-?\d+)"="온기: $1\n위기: $2\n"
+sr:"Threat: (-?\d+)\nWarmth: (-?\d+)"="온기: $1\n위기: $2\n"
+sr:"Safe for ([0-9]+)"="$1 동안 안전함"
+sr:"Take ([0-9]+) Damage"="피해를 $1 입음"
