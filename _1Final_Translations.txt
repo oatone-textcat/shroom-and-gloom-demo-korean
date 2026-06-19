@@ -984,8 +984,7 @@ sr:^(?<pre>[\s\S]*?)(?<g97_1><[^>]+>)\\nWILL NOT RECOVER FROM VULNERABILITY\.</c
 sr:^(?<pre>[\s\S]*?)(?<g98_1><[^>]+>)\\nWILL IGNORE THE NEXT (?<g98_2>\+?\d+(?:<[^>]+>\+\d+</color>)?) EFFECTS\.</color>(?<post>[\s\S]*?)$=${pre}${g98_1}\n다음 ${g98_2}개의 효과를 무시합니다.</color>${post}
 sr:^(?<pre>[\s\S]*?)(?<g99_1><[^>]+>)\\nWILL CANCEL ATTACK IF DAMAGED\.</color>(?<post>[\s\S]*?)$=${pre}${g99_1}\n피해를 입으면 공격을 취소합니다.</color>${post}
 
-sr:^(?<pre>[\s\S]*?)(?<g100_1><[^>]+>)\\nON DEATH, APPLY (?<g100_2>\+?\d+(?:<[^>]+>\+\d+</color>)?) <color=\#77FFAA>VULNERABLE</color> TO BODY\.\\nDIES WITH BODY\.</color>(?<post>[\s\S]*?)$=${pre}${g100_1}\n사망 시 본체에 ${g100_2}만큼 <color=#77FFAA>취약</color>을 부여합니다.\n본체와 함께 사망합니다.</color>${post}
-IS A Limb.<#3982FFFF>\nON DEATH, APPLY 1 <color\=#77FFAA>VULNERABLE</color> TO BODY.\nDIES WITH BODY.</color>=팔다리입니다.<#3982FFFF>\n사망 시, 본체에 <color\=#77FFAA>취약함</color>을 1 적용합니다.\n본체와 함께 사망합니다.</color>
+sr:^(?<pre>[\s\S]*?)IS A Limb\.<#3982FFFF>\nON DEATH, APPLY (?<g100_2>\+?\d+(?:<[^>]+>\+\d+</color>)?) <color\=#77FFAA>VULNERABLE</color> TO BODY\.\\nDIES WITH BODY.</color>(?<post>[\s\S]*?)=${pre}팔다리입니다.<#3982FFFF>\n사망 시, 본체에 <color\=#77FFAA>취약함</color>을 ${g100_2} 부여합니다.\n본체와 함께 사망합니다.</color>${post}
 
 sr:^(?<pre>[\s\S]*?)(?<g101_1><[^>]+>)\\nWILL RETREAT IF DAMAGED\.</color>(?<post>[\s\S]*?)$=${pre}${g101_1}\n피해를 입으면 후퇴합니다.</color>${post}
 sr:^(?<pre>[\s\S]*?)(?<g102_1><[^>]+>)\\nWILL INCREASE ATTACK DAMAGE WHEN YOU EAT\.</color>(?<post>[\s\S]*?)$=${pre}${g102_1}\n당신이 음식을 먹으면 공격 피해량이 증가합니다.</color>${post}
@@ -1334,7 +1333,7 @@ Powernap=파워 낮잠
 Practice Dummy=훈련용 허수아비
 Precious Morsel=소중한 한입
 Probe=탐침
-Psychosis=정신병
+Psychosis=정신증
 Puck Around=장난치기
 Pumpkin Bomb=호박 폭탄
 Puppet Husk=꼭두각시 허물
@@ -1870,7 +1869,7 @@ POWERNAP=파워 낮잠
 PRACTICE DUMMY=훈련용 허수아비
 PRECIOUS MORSEL=소중한 한입
 PROBE=탐침
-PSYCHOSIS=정신병
+PSYCHOSIS=정신증
 PUCK AROUND=장난치기
 PUMPKIN BOMB=호박 폭탄
 PUPPET HUSK=꼭두각시 허물
@@ -2462,6 +2461,7 @@ DO YOU HAVE NO HEART?!=너 피도 눈물도 없냐?!
 FOOD PLEASE=음식 좀 줘
 SOOOO HUNGRY=너무으으으 배고파
 SO HUNGRYYYY=너무 배고파아아
+SOOO HUNGRYYY=너어어무 배고파아아아아아
 ANY SCRAPS FOR A BABY TADDY?=아기 올챙이한테 줄 남은 찌꺼기 없어?
 JUST A TINY MORSEL PLEASE=딱 한 입만 제발
 STOP LOOKING AT ME!=쳐다보지 마!
@@ -2481,6 +2481,8 @@ MY BODY IS A TEMPLE! YOU DESECRATED MY TEMPLE!=내 몸은 신성한 성전이야
 EUGH! AHH, GROSS!=으엑! 아, 극혐이야!
 UNCONSENTUAL!=동의 안 했다고!
 STOP! HELP! STOP IT! =멈춰! 도와줘! 그만해!
+
+THE GREY CAPS\nGET YOU...=그레이캡들에게\n당했습니다...
 Select=선택
 First Course=첫 번째 코스
 Defeat Lekker Limbs=레커 림스 처치
@@ -2750,3 +2752,4 @@ sr:"Warmth: (-?\d+)\nThreat: (-?\d+)"="온기: $1\n위기: $2\n"
 sr:"Threat: (-?\d+)\nWarmth: (-?\d+)"="온기: $1\n위기: $2\n"
 sr:"Safe for ([0-9]+)"="$1 동안 안전함"
 sr:"Take ([0-9]+) Damage"="피해를 $1 입음"
+
