@@ -20,6 +20,7 @@ Well 휴식ed=만전의 휴식
 WELL 휴식ED=만전의 휴식
 Rest=휴식
 REST=휴식
+This is a door!=문입니다!
 
 # 키워드 변환식
 
@@ -114,6 +115,7 @@ Weird=이상한
 Wild=야성적인
 Energize=활력
 Energy Cost=에너지 비용
+Energy cost.=에너지 비용.
 Evolve=진화
 Exhaust=소멸
 Warmth=온기
@@ -2431,7 +2433,7 @@ MAKE A SOUP=수프 만들기
 SELECT A CARD TO GAIN:=강화할 카드를 선택하세요.
 Take only one=하나만 선택 가능
 This is further detail=상세 정보입니다
-LOOT ALL=모두 약탈
+LOOT ALL=모두 가져가기
 LOOT THE CORPSE=시체 수색
 GRAB YOUR LOOT=전리품 획득
 PICK YOUR UPGRADE:=업그레이드를 선택하세요:
@@ -2694,7 +2696,7 @@ sr:^(?<pre>[\s\S]*?)STORED GLOOM \((?<gloom_damage>\d+)\) BECOMES MAX HEALTH, CO
 sr:^(?<pre>[\s\S]*?)Digging here rewards cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}여기서 발굴하면 ${biome} 터널 고유의 카드를 보상으로 얻습니다.${post}
 sr:^(?<pre>[\s\S]*?)Fertile ground\\nFind cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}비옥한 땅\\n${biome} 터널 고유의 카드를 발견합니다.${post}
 sr:^(?<pre>[\s\S]*?)(?<biome>.*?) Tunnel:\\n(?<post>[\s\S]*?)$=${pre}${biome} 터널:\\n${post}
-sr:^(?<pre>[\s\S]*?)Edibles:\s*(?<r_edibles_n>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>[\s\S]*?)$=${pre}식품: ${r_edibles_n}개${post}
+sr:^(?<pre>[\s\S]*?)Edibles:\s*(?<r_edibles_n>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>[\s\S]*?)$=${pre}식품: ${r_edibles_n} 개${post}
 sr:^(?<pre>[\s\S]*?)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?) reusable cards\.(?<post>[\s\S]*?)$=${pre}${n}개의 재사용 가능 카드.${post}
 sr:^(?<pre>[\s\S]*?)TRADE\. (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\.(?<post>[\s\S]*?)$=${pre}거래. ${link}으로.${post}
 sr:^(?<pre>[\s\S]*?)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?) (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?) PLEASE!(?<post>[\s\S]*?)$=${pre}${link} ${n}개 줘!${post}
@@ -2727,6 +2729,7 @@ THE CARD <#2D7621FF><nobr><nobr><link\=kW>Toad</link></nobr></nobr></color> SITS
 REMINISCE WITH THE VAGABOND <#2D7621FF><nobr><nobr><link\=kW>두꺼비</link></nobr></nobr></color><#332F2FFF>. <nobr><nobr><link\=kW>Structure</link></nobr></nobr></color>. =방랑자 <#2D7621FF><nobr><nobr><link\=kW>두꺼비</link></nobr></nobr></color>와 추억을 되새깁니다<#332F2FFF>. <nobr><nobr><link\=kW>구조물</link></nobr></nobr></color>. 
 REMINISCE WITH THE VAGABOND <#2D7621FF><nobr><nobr><link\=kW>Toad</link></nobr></nobr></color><#332F2FFF>. <nobr><nobr><link\=kW>Structure</link></nobr></nobr></color>. =방랑자 <#2D7621FF><nobr><nobr><link\=kW>두꺼비</link></nobr></nobr></color>와 추억을 되새깁니다<#332F2FFF>. <nobr><nobr><link\=kW>구조물</link></nobr></nobr></color>. 
 
+WORD_EXHAUST_TARGET_FOOD=대상 음식 소멸
 Paper boy=신문 배달부
 Choose your character:=캐릭터를 선택하세요:
 Please feed our starving families and our addiction to toasties by getting the full version once it's out  ^_^=정식 버전이 출시되면 구매해서 굶주린 저희 가족들과 토스티 중독을 부디 먹여 살려 주세요 ^_^
