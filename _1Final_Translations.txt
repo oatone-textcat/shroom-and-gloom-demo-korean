@@ -192,7 +192,7 @@ Inspired=고무됨
 Regrowth=재생
 Resurgence=재기
 Rotten=썩은
-Seasoned=노련한
+Seasoned=양념
 Slime Mom=슬라임 엄마
 Spell Weakness=주문 취약
 Spellshield=주문 보호막
@@ -921,7 +921,7 @@ Inspired=고무됨
 Regrowth=재생
 Resurgence=재기
 Rotten=썩은
-Seasoned=노련한
+Seasoned=양념
 Slime Mom=슬라임 엄마
 Spell Weakness=주문 취약
 Spellshield=주문 보호막
@@ -2202,23 +2202,24 @@ END PREVIOUS RUN?=이전 모험을 끝내시겠습니까?
 Starting a new run will delete your previous run.\n\nAre you made like that?=새로운 모험을 시작하면 이전 기록이 삭제됩니다.\n\n정말 그렇게 나약하게 태어났나요?
 YES\nIM A BABY=네!\n전 응애에요
 NO!\nIM RAD=아니!\n난 킹왕짱이야
-You can press <color=#f6f5c6>spacebar</color> to end your turn.=<color=#f6f5c6>스페이스바</color>를 누르면 턴을 마칠 수 있습니다.
+You can press <color\=#f6f5c6>spacebar</color> to end your turn.=<color\=#f6f5c6>스페이스바</color>를 누르면 턴을 마칠 수 있습니다.
 Hopefully, one day you wont see this loading screen...=언젠가는 이 로딩 화면을 안 보게 되기를 간절히 바랍니다...
-<color=#b1eaf6>Blocking</color> is for scaredy cats... Eat your enemies!=<color=#b1eaf6>방어</color>는 겁쟁이들이나 하는 짓입니다... 그냥 적을 집어삼키세요!
-Hey! Youre playing an early version of this game! It will break!=어이쿠! 이 게임의 얼리 액세스 버전을 플레이 중이시군요! 곧 터질 겁니다!
-You can press <color=#f6b1f3>middle mouse button</color> to walk forward, while you eat a burrito with your other hand.=다른 손으로 부리토를 먹으면서 <color=#f6b1f3>마우스 휠 버튼</color>을 누르면 앞으로 걸어갈 수 있습니다.
-If you aren't eating a burrito, you can't press <color=#f6b1f3>middle mouse button</color>  to walk forward.=만약 부리토를 먹고 있지 않다면, <color=#f6b1f3>마우스 휠 버튼</color>을 눌러 앞으로 걸어갈 수 없습니다.
+<color\=#b1eaf6>Blocking</color> is for scaredy cats... Eat your enemies!=<color\=#b1eaf6>방어</color>는 겁쟁이들이나 하는 짓입니다... 그냥 적을 집어삼키세요!
+<color\=#b1eaf6>Blocking</color> is for scaredy cats... Eat your enemies!=<color\=#b1eaf6>방어</color>는 겁쟁이들이나 하는 짓입니다... 그냥 적을 집어삼키세요!
+Hey! Youre playing an early version of this game! It will break!=이 게임의 얼리 액세스 버전을 플레이 중이시군요! 게임이 군데군데 고장 날 수 있습니다!
+You can press <color\=#f6b1f3>middle mouse button</color> to walk forward, while you eat a burrito with your other hand.=<color\=#f6b1f3>한손으로 부리토를 먹는 중이라면, 마우스 휠 버튼</color>을 눌러 앞으로 걸어갈 수 있습니다.
+If you aren't eating a burrito, you can't press <color\=#f6b1f3>middle mouse button</color>  to walk forward.=만약 부리토를 먹고 있지 않다면, <color\=#f6b1f3>마우스 휠 버튼</color>을 눌러 앞으로 걸어갈 수 없습니다.
 Somebody loves you <3=누군가는 당신을 사랑한답니다 <3
 Eat your enemies!=적들을 집어삼키세요!
 Burritos are wraps. Wraps are not burritos. Tacos are bad wraps. Chips are bad tacos.=부리토는 랩입니다. 랩은 부리토가 아닙니다. 타코는 형편없는 랩이고, 나초 칩은 형편없는 타코입니다.
-Get to The Gloom! There will be <color=#f6b1f3>cake</color>.=더 글룸으로 가세요! 그곳엔 <color=#f6f5c6>케이크</color>가 기다리고 있습니다.
+Get to The Gloom! There will be <color\=#f6b1f3>cake</color>.=Get to The Gloom! There will be <color\=#f6b1f3>cake</color>.=더 글룸으로 가세요! 그곳엔 <color\=#f6f5c6>케이크</color>가 기다리고 있습니다.
 Bork bork!=왈왈!
 Be excellent to each other!=서로에게 친절하게 대하세요!
 Stay rad everybody!=모두 멋진 모습 유지하라고!
 Lick the toad!=두꺼비를 핥아봐!
 Good soup.=음, 아주 훌륭한 수프야.
 You're awesome!=당신은 최고예요!
-PMA = Positive Mental Attitude=PMA \= 긍정적인 정신 상태
+PMA \= Positive Mental Attitude=PMA \= 긍정적인 정신 상태
 CREDITS=크레딧
 Paper Boy=신문 배달부
 Got a bit lost on their route...=배달 경로를 조금 잃어버린 듯합니다...
@@ -2376,6 +2377,8 @@ THE GLOOM?=들어가는 길일지도?
 NO THANKS=괜찮습니다
 REROLL=새로고침
 TAKE=가져가기
+TAKE IT=가져가기
+Click me=클릭하세요
 OVERCHARGED=과충전됨
 LOOT THE CORPSE=시체 수색
 A pitiful legacy=볼품없는 유산
