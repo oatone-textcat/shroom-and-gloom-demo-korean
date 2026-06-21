@@ -2613,6 +2613,7 @@ Your choice is made.=너의 선택은 내려졌다.
 Only those who make it to The Gloom are worthy of a reward.=오직 글룸에 도달한 자만이 보상을 받을 자격이 있다.
 Farewell.=작별이다.
 May it empower those who come next.=다음에 올 자들에게 힘이 되기를.
+May it empower those who ome next.=다음에 올 자들에게 힘이 되기를.
 Not what I would have chosen.=나라면 고르지 않았을 선택이군.
 Another small boon.=또 하나의 작은 은총이군.
 Good choice.=좋은 선택이다.
@@ -2697,8 +2698,8 @@ TOASTIES I WANT.\nEAT I WILL.=토스티 원한다.\n먹을 거다 나.
 sr:^(?<pre>[\s\S]*?)ADD (?<gloom_damage>\d+) GLOOM DAMAGE(?<post>[\s\S]*?)$=${pre}${gloom_damage} 글룸 피해 추가${post}
 sr:^(?<pre>[\s\S]*?)STORED GLOOM \((?<gloom_damage>\d+)\) BECOMES MAX HEALTH, CONSUME(?<post>[\s\S]*?)$=${pre}저장된 글룸(${gloom_damage})이 최대 체력이 되며, 소모됩니다${post}
 sr:^(?<pre>[\s\S]*?)Digging here rewards cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}여기서 발굴하면 ${biome} 터널 고유의 카드를 보상으로 얻습니다.${post}
-sr:^(?<pre>[\s\S]*?)Fertile ground\\nFind cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}비옥한 땅\\n${biome} 터널 고유의 카드를 발견합니다.${post}
-sr:^(?<pre>[\s\S]*?)(?<biome>.*?) Tunnel:\\n(?<post>[\s\S]*?)$=${pre}${biome} 터널:\\n${post}
+sr:^(?<pre>[\s\S]*?)Fertile ground\\nFind cards unique to (?<biome>.*?) tunnels\.(?<post>[\s\S]*?)$=${pre}비옥한 땅\n${biome} 터널 고유의 카드를 발견합니다.${post}
+sr:^(?<pre>[\s\S]*?)(?<biome>.*?) Tunnel:\\n(?<post>[\s\S]*?)$=${pre}${biome} 터널:\n${post}
 sr:^(?<pre>[\s\S]*?)Edibles:\s*(?<r_edibles_n>\+?\d+(?:<[^>]+>\+\d+</color>)?)(?<post>[\s\S]*?)$=${pre}식품: ${r_edibles_n} 개${post}
 sr:^(?<pre>[\s\S]*?)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?) reusable cards\.(?<post>[\s\S]*?)$=${pre}${n}개의 재사용 가능 카드.${post}
 sr:^(?<pre>[\s\S]*?)TRADE\. (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?)\.(?<post>[\s\S]*?)$=${pre}거래. ${link}으로.${post}
@@ -2710,7 +2711,7 @@ sr:^(?<pre>[\s\S]*?)YOU CAN NEVER HAVE ENOUGH (?<link>(?:<[^>]+>)?(?:<nobr>)?<li
 sr:^(?<pre>[\s\S]*?)VALUE: (?<hex><[^>]+>)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?)</color>(?<post>[\s\S]*?)$=${pre}가치: ${hex}${n}</color>${post}
 sr:^(?<pre>[\s\S]*?)SOUP VALUE: (?<hex><[^>]+>)(?<n>\+?\d+(?:<[^>]+>\+\d+</color>)?)</color>(?<post>[\s\S]*?)$=${pre}수프 가치: ${hex}${n}</color>${post}
 sr:^(?<pre>[\s\S]*?)<b>YOU HAVE NO (?<link>(?:<[^>]+>)?(?:<nobr>)?<link\=[^>]+>.*?</link>(?:</nobr>)?(?:</color>)?), BUT</b>(?<post>[\s\S]*?)$=${pre}<b>너 ${link} 없지만, 대신</b>${post}
-sr:^(?<pre>[\s\S]*?)Quest Complete:\\n(?<quest>.*?)(?<post>[\s\S]*?)$=${pre}퀘스트 완료:\\n${quest}${post}
+sr:^(?<pre>[\s\S]*?)Quest Complete:\\n(?<quest>.*?)(?<post>[\s\S]*?)$=${pre}퀘스트 완료:\n${quest}${post}
 
 sr:^(?<pre>[\s\S]*?)Complete (?<quest>.*?) to unlock(?<post>[\s\S]*?)$=${pre}해금하려면 ${quest} 완료${post}
 sr:^(?<pre>[\s\S]*?)UNLOCKED (?<character>.*?)(?<post>[\s\S]*?)$=${pre}${character} 해금됨${post}
@@ -2754,8 +2755,8 @@ You have learnt something...=당신은 무언가를 배웠습니다...
 
 # UI_en 정규식
 
-sr:"Warmth: (-?\d+)\nThreat: (-?\d+)"="온기: $1\n위기: $2\n"
-sr:"Threat: (-?\d+)\nWarmth: (-?\d+)"="온기: $1\n위기: $2\n"
+sr:"Warmth: (-?\d+)\nThreat: (-?\d+)"="온기: $1\n위협: $2\n"
+sr:"Threat: (-?\d+)\nWarmth: (-?\d+)"="위협: $1\n온기: $2\n"
 sr:"Safe for ([0-9]+)"="$1 동안 안전함"
 sr:"Take ([0-9]+) Damage"="피해를 $1 입음"
 
